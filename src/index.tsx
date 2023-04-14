@@ -1,10 +1,6 @@
 import React, { Children, useState } from "react";
 import ReactDOM from "react-dom/client";
 
-import "bootstrap/dist/css/bootstrap.min.css";
-import "bootstrap/dist/js/bootstrap.min.js";
-
-
 const Message = (props: React.PropsWithChildren<{}>) => {
     const children = Children.toArray(props.children);
     const hasChild = children.length > 0;
