@@ -42,7 +42,9 @@ const Tree = () => {
     </div>;
 }
 
+addEventListener("load", () => {
+    const domContainer = document.querySelector('#tree');
+    const root = ReactDOM.createRoot(domContainer);
+    root.render(<Tree/>);
+});
 
-const domContainer = document.querySelector('#tree');
-const root = ReactDOM.createRoot(domContainer);
-root.render(<Tree/>);
